@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function validate(){
+var text=document.getElementById("text1").value;
+var regx=/([A-Za-z0-9\.-])+@([a-z]{5}).([a-z]{3})$/;
+if(regx.test(text)){
+     alert("VALID");
+}
+else
+{
+alert("NOT VALID");
+}}
+</script>
+</head>
+<body>
+<form>
+<h1>***valid email address***</h1><br>
+<input type="text" id="text1"placeholder="Email"><br><br>
+<button onclick="validate()">submit</button>
+</form>
+</body>
+</html>

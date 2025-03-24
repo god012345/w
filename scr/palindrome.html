@@ -1,0 +1,23 @@
+<html><body>
+<h1>****check palindrome or not****</h1>
+<script>
+function palindrome()
+{
+var givenstring=prompt("enter the string:");
+document.writeln("<br>"+"the givenstring is:",givenstring);
+var arraystring = givenstring.split('');
+document.writeln("<br>"+"the split()string is:",arraystring);
+var reversestring=arraystring.reverse();
+document.writeln("<br>"+"the reverse()string is:",reversestring);
+var finalstring = reversestring.join('');
+document.writeln("<br>"+"the join()string is:",finalstring);
+document.writeln("<br>");
+if(givenstring==finalstring)
+{document.writeln("<br>"+"the string is palindrome");}
+else
+{
+document.writeln("<br>"+"the string is not palindrome");
+}}
+palindrome();
+</script>
+</body></html>

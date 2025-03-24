@@ -1,0 +1,23 @@
+<html>
+<head>form validation</head>
+<body>
+<form name="login">
+username<input type="text" name="userid"/>
+password <input type="password" name="pswrd"/>
+<input type="button" onclick="check(this.form)"value="login"/>
+<button type="reset" value="Reset">Reset</button>
+</form>
+<script language="javascript">
+function check(form){
+if(form.userid.value=="Kratos"&& form.pswrd.value=="godofwar")
+{
+alert("registered your password or username")
+}
+else
+{
+alert("error password or username")
+}
+}
+</script>
+</body>
+</html>

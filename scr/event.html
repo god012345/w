@@ -1,0 +1,40 @@
+<html>
+<head>
+<script>
+function fl()
+{
+alert("on mouse event");
+}
+function f2()
+{
+document.getElementById("text1").style.background="red";
+}
+function f3()
+{
+alert("I am a programmer");
+}
+function f4()
+{
+alert("you pressed the key");
+}
+</script>
+</head>
+<body>
+<h1>JAVASCRIPT EVENTS</H1>
+<form action="address.html">
+<p onmouseover="fl()">Keep cursor me</p>
+<br>
+<br>
+enter your name:<input type="text" id="text1"onfocus="f2()">
+<br>
+<br>
+<input type="button" onclick="f3()"value=" i am click here to know who am i">
+<br>
+<br>
+enter something here:<input type="text" onkeydown="f4()">
+<br>
+<br>
+<button type=submit>submit</button>
+</from>
+</body>
+</html>

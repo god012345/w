@@ -1,0 +1,17 @@
+<html>
+<head>
+<script>
+function randomimage()
+{
+var r=new Array("image1.jpg","image2.jpg","image3.jpg");
+var number=Math.floor(Math.random()*r.length);
+return document.getElementById("result").src=r[number];
+}
+</script>
+</head>
+<body>
+<img src="image1.jpg"height="500"width="500" id="result">
+<br><br>
+<button onclick="setInterval(randomimage, 1000)">click</button>
+</body>
+</html>

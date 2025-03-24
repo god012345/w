@@ -1,0 +1,19 @@
+<html> 
+<body> 
+<h1>*****fibonacci series*****</h1> 
+<script> 
+var n1=0,n2=1,n3,i; 
+var num=parseInt (prompt("enter the limit of fibonacci series")); 
+document.writeln("fibonacci series is:"); 
+document.writeln("<br>"+n1); 
+document.writeln("<br>"+n2); 
+for(i=3;i<=num;i++) 
+{ 
+n3=n1+n2; 
+document.writeln("<br>"+n3); 
+n1=n2; 
+n2=n3; 
+} 
+</script> 
+</body> 
+</html>
